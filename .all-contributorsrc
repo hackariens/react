@@ -31,32 +31,6 @@
       ]
     },
     {
-      "login": "dependabot[bot]",
-      "name": "dependabot[bot]",
-      "avatar_url": "https://avatars0.githubusercontent.com/in/29110?v=4",
-      "profile": "https://github.com/apps/dependabot",
-      "contributions": [
-        "code",
-        "maintenance",
-        "plugin",
-        "security"
-      ]
-    },
-    {
-      "login": "dependabot-preview[bot]",
-      "name": "dependabot-preview[bot]",
-      "avatar_url": "https://avatars3.githubusercontent.com/in/2141?v=4",
-      "profile": "https://github.com/apps/dependabot-preview",
-      "contributions": [
-        "code",
-        "maintenance",
-        "plugin",
-        "review",
-        "security",
-        "tool"
-      ]
-    },
-    {
       "login": "restyled-commits",
       "name": "Restyled Commits",
       "avatar_url": "https://avatars0.githubusercontent.com/u/65077583?v=4",
