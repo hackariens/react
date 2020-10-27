@@ -41,6 +41,12 @@ Hosts :
 
 127.0.0.1 react.lxc www.react.lxc
 
+## Récupérer les images docker
+
+``` sh
+make docker-image-pull
+```
+
 ## Install
 
 ``` sh
