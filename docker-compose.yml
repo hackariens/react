@@ -16,4 +16,4 @@ services:
         - "traefik.http.middlewares.wwwredirectregex.redirectregex.regex=^http://react.lxc/(.*)"
         - "traefik.http.middlewares.wwwredirectregex.redirectregex.replacement=http://www.react.lxc/$${1}"
         - "traefik.http.routers.www-react.entrypoints=web"
-        - "traefik.http.services.www-react.loadbalancer.server.port=80"
+        - "traefik.http.services.www-react.loadbalancer.server.port=3000"
