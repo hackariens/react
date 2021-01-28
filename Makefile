@@ -30,7 +30,7 @@ package-lock.json: package.json
 node_modules: package-lock.json
 	npm install
 
-build-ci: ## BUILD
+build: ## BUILD
 	cd apps && npm run build
 
 contributors: ## Contributors
@@ -48,7 +48,7 @@ docker: ## Scripts docker
 ifeq ($(COMMAND_ARGS),create-network)
 	@docker network create --driver=overlay $(NETWORK)
 else ifeq ($(COMMAND_ARGS),deploy)
-	@docker stack deploy -c docker-compose.yml $(STACK)
+	@docker stack deploy -c docker compose.yml $(STACK)
 else ifeq ($(COMMAND_ARGS),image-pull)
 	@docker image pull koromerzhin/nodejs:15.0.1-react
 else ifeq ($(COMMAND_ARGS),ls)
@@ -101,7 +101,7 @@ else
 endif
 
 install: node_modules apps/node_modules ## Installation
-	@make docker-deploy -i
+	@make docker deploy -i
 
 linter: ## Scripts Linter
 ifeq ($(COMMAND_ARGS),all)
