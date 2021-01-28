@@ -50,7 +50,7 @@ ifeq ($(COMMAND_ARGS),create-network)
 else ifeq ($(COMMAND_ARGS),deploy)
 	@docker stack deploy -c docker-compose.yml $(STACK)
 else ifeq ($(COMMAND_ARGS),image-pull)
-	@docker image pull koromerzhin/nodejs:10.2.0-angular
+	@docker image pull koromerzhin/nodejs:15.0.1-react
 else ifeq ($(COMMAND_ARGS),ls)
 	@docker stack services $(STACK)
 else ifeq ($(COMMAND_ARGS),stop)
