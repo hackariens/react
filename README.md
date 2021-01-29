@@ -35,8 +35,7 @@ docker swarm
 
 Hosts:
 
-- 127.0.0.1 react.lxc
-- 127.0.0.1 www.react.lxc
+- react.traefik.me
 
 ## Récupérer les images docker
 
