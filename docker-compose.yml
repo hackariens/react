@@ -12,8 +12,7 @@ services:
     deploy:
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.www-react.rule=Host(`react.lxc`, `www.react.lxc`)"
-        - "traefik.http.middlewares.reactredirectregex.redirectregex.regex=^http://react.lxc/(.*)"
-        - "traefik.http.middlewares.reactredirectregex.redirectregex.replacement=http://www.react.lxc/$${1}"
-        - "traefik.http.routers.www-react.entrypoints=web"
-        - "traefik.http.services.www-react.loadbalancer.server.port=3000"
+        - "traefik.http.routers.react.rule=Host(`react.traefik.me`)"
+        - "traefik.http.routers.react-tls.tls.domains[0].main=react.traefik.me"
+        - "traefik.http.routers.react-tls.tls.domains[0].sans=react-*.traefik.me"
+        - "traefik.http.services.react.loadbalancer.server.port=3000"
