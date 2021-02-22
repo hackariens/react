@@ -7,7 +7,7 @@ networks:
     attachable: true
 services:
   www:
-    image: koromerzhin/nodejs:15.0.1-react
+    image: koromerzhin/nodejs:16.13.1-react
     volumes:
       - ${PWD}/apps:/app
     networks:
