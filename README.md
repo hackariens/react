@@ -32,12 +32,6 @@ Hosts:
 
 - react.traefik.me
 
-## Récupérer les images docker
-
-``` sh
-make docker image-pull
-```
-
 ## Install
 
 ``` sh
