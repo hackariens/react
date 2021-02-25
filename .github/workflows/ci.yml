@@ -36,5 +36,3 @@ jobs:
         run: make docker ls
       - name: linter readme.md
         run: make linter readme
-      - name: Launch build
-        run: make build
