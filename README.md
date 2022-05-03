@@ -32,6 +32,14 @@ Hosts:
 
 - react.traefik.me
 
+## Download
+
+```sh
+git clone git@github.com:koromerzhin/template-react.git template-react
+cd template-react
+git submodule update --init
+```
+
 ## Install
 
 ``` sh
