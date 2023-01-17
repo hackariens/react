@@ -1,0 +1,16 @@
+version: "3.4"
+networks:
+  proxylampy:
+    external: true
+services:
+  www:
+    networks:
+      - proxylampy
+      - net
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.react.rule=Host(`react.traefik.me`)"
+        - "traefik.http.routers.react-tls.tls.domains[0].main=react.traefik.me"
+        - "traefik.http.routers.react.tls=true"
+        - "traefik.http.services.react.loadbalancer.server.port=3000"
