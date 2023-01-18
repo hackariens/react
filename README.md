@@ -38,10 +38,20 @@ git clone --recurse-submodules git@github.com:hackariens/react.git react
 cd react
 ```
 
+## Environnment
+
+Edit .env with .env.example
+
 ## Install
 
 ``` sh
 npm install
+```
+
+## Launch
+
+``` sh
+npm run exec
 ```
 
 ## Author
