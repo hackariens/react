@@ -48,6 +48,12 @@ Edit .env with .env.example
 npm install
 ```
 
+## Create apps
+
+```sh
+npm run create:apps
+```
+
 ## Launch
 
 ``` sh
