@@ -42,6 +42,7 @@ tasks:
   help:
     desc: "Affiche l'aide détaillée"
     aliases: [ h ]
+    silent: true
     cmds:
     - task: default
 
@@ -81,11 +82,13 @@ tasks:
 
   create:apps:
     desc: "Crée une nouvelle application react dans le dossier apps"
+    silent: true
     cmds:
     - CI=true npx create-react-app apps --template typescript
 
   react:exec:
     desc: "Exécute une commande dans un conteneur en cours d'exécution"
+    silent: true
     cmds:
     - task: react:getpull-image
     - task: create:apps
@@ -95,6 +98,7 @@ tasks:
 
   react:bash:
     desc: "Ouvre un shell bash dans le conteneur www"
+    silent: true
     cmds:
     - task: docker:stack:shell
       vars:
