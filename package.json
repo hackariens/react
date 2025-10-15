@@ -1,6 +1,6 @@
 {
   "name": "@hackariens/react",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Templates pour la création d'un nouveau projet react",
   "scripts": {
     "lint:markdown": "markdownlint README.md",
